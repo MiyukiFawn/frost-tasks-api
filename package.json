@@ -5,6 +5,7 @@
   "main": "src/server.ts",
   "scripts": {
     "start": "nodemon src/server.ts",
+    "vercel-build": "npx prisma generate && npx prisma migrate deploy",
     "build": "del build && prettier --write / && tsc"
   },
   "author": "Miyuki Fawn",
