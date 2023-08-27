@@ -54,7 +54,7 @@ app.get("/docs-data", (req: Request, res: Response) => {
   res.status(200).json(swaggerDocs);
 });
 app.get("/docs", (req: Request, res: Response) => {
-  res.redirect("https://frostsh.vercel.app/docs");
+  res.redirect("https://ftasks.vercel.app/docs");
 });
 
 /** Import routes from 'routes.ts' file */
