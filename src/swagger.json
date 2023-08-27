@@ -3,11 +3,11 @@
   "info": {
     "title": "Frost Tasks API",
     "version": "1.0.0",
-    "description": "Simple API used for [Frost Tasks](http://localhost:4200)"
+    "description": "Simple API used for [Frost Tasks](https://frost-tasks-api.vercel.app)"
   },
   "servers": [
     {
-      "url": "http://localhost:3000"
+      "url": "https://frost-tasks-api.vercel.app"
     }
   ],
   "paths": {
