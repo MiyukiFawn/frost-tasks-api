@@ -1,4 +1,4 @@
-import ApiErrors from "error/ApiError";
+import ApiErrors from "../errors/ApiError";
 import { Request, Response, NextFunction } from "express";
 
 const NAMESPACE = "ID VALIDATION MIDDLEWARE";

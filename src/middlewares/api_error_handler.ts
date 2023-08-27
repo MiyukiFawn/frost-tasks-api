@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import ApiError from "error/ApiError";
-import Debuger from "src/debuger";
+import ApiError from "../errors/ApiError";
+import Debuger from "../debuger";
 import { PrismaClientKnownRequestError } from "@prisma/client/runtime/library";
 
 const Debug = Debuger("SERVER");

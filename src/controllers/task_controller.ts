@@ -3,10 +3,10 @@ import Debuger from "../debuger";
 
 import { User, PrismaClient, Task } from "@prisma/client";
 import ApiErrors from "../errors/ApiError";
-import { user_jwt_params_type } from "validations/user_jwt_params";
-import { create_task_params_schema, create_task_params_type } from "validations/create_task_params";
-import { validate_post } from "helpers/main_helpers";
-import { update_task_params_schema, update_task_params_type } from "validations/update_task_params";
+import { user_jwt_params_type } from "../validations/user_jwt_params";
+import { create_task_params_schema, create_task_params_type } from "../validations/create_task_params";
+import { validate_post } from "../helpers/main_helpers";
+import { update_task_params_schema, update_task_params_type } from "../validations/update_task_params";
 
 const Debug = Debuger("Task Controller");
 const prisma = new PrismaClient();

@@ -1,6 +1,6 @@
 import { User } from "@prisma/client";
-import ApiErrors from "error/ApiError";
-import Debuger from "debuger";
+import ApiErrors from "../errors/ApiError";
+import Debuger from "../debuger";
 import Jwt from "jsonwebtoken";
 
 const Debug = Debuger("Main Helpers");

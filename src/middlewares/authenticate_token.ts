@@ -1,9 +1,9 @@
-import ApiErrors from "error/ApiError";
+import ApiErrors from "../errors/ApiError";
 import { Request, Response, NextFunction } from "express";
-import Debugger from "debuger";
+import Debugger from "../debuger";
 import jwt from "jsonwebtoken";
-import { validate_jwt, validate_post } from "helpers/main_helpers";
-import { user_jwt_params_schema, user_jwt_params_type } from "validations/user_jwt_params";
+import { validate_jwt, validate_post } from "../helpers/main_helpers";
+import { user_jwt_params_schema, user_jwt_params_type } from "../validations/user_jwt_params";
 
 const Debug = Debugger("JWT validation middleware");
 

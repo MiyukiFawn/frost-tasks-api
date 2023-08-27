@@ -6,12 +6,12 @@ import Jwt from "jsonwebtoken";
 
 import { User, PrismaClient } from "@prisma/client";
 import ApiErrors from "../errors/ApiError";
-import { create_user_params_schema, create_user_params_type } from "validations/create_user_params";
-import { generate_user_jwt, validate_jwt, validate_post } from "helpers/main_helpers";
-import { login_user_params_schema, login_user_params_type } from "validations/login_user_params";
-import { refresh_login_params_schema, refresh_login_params_type } from "validations/refresh_login_params";
-import { update_user_params_schema, update_user_params_type } from "validations/update_user_params";
-import { user_jwt_params_type } from "validations/user_jwt_params";
+import { create_user_params_schema, create_user_params_type } from "../validations/create_user_params";
+import { generate_user_jwt, validate_jwt, validate_post } from "../helpers/main_helpers";
+import { login_user_params_schema, login_user_params_type } from "../validations/login_user_params";
+import { refresh_login_params_schema, refresh_login_params_type } from "../validations/refresh_login_params";
+import { update_user_params_schema, update_user_params_type } from "../validations/update_user_params";
+import { user_jwt_params_type } from "../validations/user_jwt_params";
 
 const Debug = Debuger("User Controller");
 const prisma = new PrismaClient();

@@ -1,12 +1,12 @@
 import express from "express";
-import Debuger from "debuger";
+import Debuger from "./debuger";
 /** IMPORT ROUTERS */
 
 import { create_user, delete_user, login, refresh_login, update_user } from "./controllers/user_controller";
 import { get_tasks, create_task, update_task } from "./controllers/task_controller";
 
 import dotenv from "dotenv";
-import authenticate_token from "middlewares/authenticate_token";
+import authenticate_token from "./middlewares/authenticate_token";
 dotenv.config();
 
 const Debug = Debuger("Routes");
